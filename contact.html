@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
+<style>
+    #contact-form {
+        display: flex;
+        justify-content: center;
+    }
+</style>
+</head>
+<body>
+
+    <div class="topnav">
+        <a href="./index.html">Home</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./about.html">About</a>
+    </div>
+    <div id="contact-form">
+        <form action="actions.php" method="POST" class="form-container" style="text-align:center" onsubmit="handleSubmit(e)">
+            <h1>Send us a message</h1>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="message"><b>Message</b></label>
+            <input type="text" placeholder="Enter Message" name="message" required>
+
+            <button type="submit" class="btn">Submit</button>
+    </form>
+</div>
+    
+
+
+
+
+
+
+</body>
+</html>

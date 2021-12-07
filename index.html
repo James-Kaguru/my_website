@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="topnav">
+        <a href="./index.html">Home</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./about.html">About</a>
+    </div>
+    <img src="./images/img1.jpg" style= "max-height: 600px; width:100%">
+
+    <div style="display: grid; text-align:center">
+        <div style="background:whitesmoke; margin:8px">
+            <h1>Secure and private</h1>
+            <p>256-bit encryption used to safeguard your website. And we don’t share or use your data</p>
+        </div >
+        <div style="background:whitesmoke; margin:8px">
+            <h1>Flexible for any organization</h1>
+            <p>edit your website the way you want to</p>
+        </div>
+        <div style="background:whitesmoke; margin:8px">
+            <h1>Automated and simple</h1>
+            <p>Spend your time creating not designing</p>
+        </div>
+        
+        
+    </div>
+
+    <div style="padding: 40px">
+        <p>Creating blogs</p>
+        <div class="container">
+        <div class="skills b1">90%</div>
+        </div>
+
+        <p>Creating company portfolio</p>
+        <div class="container">
+        <div class="skills b2">80%</div>
+        </div>
+
+        <p>Creating e-commerce</p>
+        <div class="container">
+        <div class="skills b3">95%</div>
+        </div>
+
+    </div>
+
+    <button class="open-button" onclick="openForm()">Open Form</button>
+
+    <div class="form-popup" id="myForm">
+        <form class="form-container" method="POST">
+            <h1>Contact us</h1>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="message"><b>Message</b></label>
+            <input type="text" placeholder="Enter Message" name="message" required>
+
+            <button type="submit" class="btn">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+    <p id="demo" style="text-align: center; padding: 10px; margin: 20px; background-color: antiquewhite;"></p>
+    <button  style="margin-left: 100px;"onclick="sayHello()">Say Hello</button>
+    <script>
+        function sayHello() {
+        let text;
+        let person = prompt("Please enter your name:", "Enter your name here");
+        if (person == null || person == "") {
+            text = "User cancelled the prompt.";
+        } else {
+            text = "Hello " + person + "! How are you today?";
+        }
+        document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+
+    <script>
+    function openForm() {
+    document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+
+</body>
+</html>
